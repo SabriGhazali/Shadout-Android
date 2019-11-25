@@ -1,0 +1,2 @@
+include ':app', ':shadout'
+rootProject.name='Sample'
