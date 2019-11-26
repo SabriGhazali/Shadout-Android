@@ -1,4 +1,4 @@
-package com.sablasvegas.shadout
+package com.sablasvegas.shadoutexample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

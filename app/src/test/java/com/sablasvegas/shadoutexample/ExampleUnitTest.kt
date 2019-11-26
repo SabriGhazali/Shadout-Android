@@ -1,4 +1,4 @@
-package com.sablasvegas.shadout
+package com.sablasvegas.shadoutexample
 
 import org.junit.Test
 

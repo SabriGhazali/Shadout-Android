@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_blue">#0075EB</color>
+    <color name="color_blue_shadow">#400075EB</color>
+    <color name="color_pink_shadow">#40E9097E</color>
+    <color name="color_pink">#E9097E</color>
+</resources>
