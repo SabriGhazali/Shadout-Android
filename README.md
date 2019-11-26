@@ -23,6 +23,6 @@
 	```
 
     ```groovy
-   implementation 'com.github.dhaval2404:imagepicker:1.5'
+   implementation 'com.github.sablasvegas.shadow;1.0.0'
     
  
