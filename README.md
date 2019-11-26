@@ -23,6 +23,7 @@
 	```
 
     ```groovy
-   implementation 'com.github.sablasvegas.shadow;1.0.0'
+       implementation 'com.github.SabriGhazali:Shadout-Android:013dfbc366'
+
     
  
