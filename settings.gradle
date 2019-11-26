@@ -1,2 +1,2 @@
-include ':app', ':shadout'
+include ':sample', ':shadout'
 rootProject.name='Sample'
