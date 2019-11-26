@@ -1,8 +1,8 @@
 # Shadout Library for Android
 
-[![Download](https://api.bintray.com/packages/dhaval2404/maven/imagepicker/images/download.svg) ](0) 
-[![Releases](https://img.shields.io/github/release/dhaval2404/imagePicker/all.svg?style=flat-square)](v1.0.0)
-[![API](https://img.shields.io/badge/API-19%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)
+[![Download](0) ](0) 
+[![Releases](v1.0.0)](v1.0.0)
+[![API](15)](https://android-arsenal.com/api?level=15)
 ![Language](https://img.shields.io/badge/language-Kotlin-orange.svg)
 
 
