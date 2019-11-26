@@ -16,14 +16,13 @@
 	```groovy
 	allprojects {
 	   repositories {
-	      	jcenter()
-           	maven { url "https://jitpack.io" }  //Make sure to add this in your project for uCrop
+           	maven { url "https://jitpack.io" }  //Make sure to add this in your project
 	   }
 	}
 	```
 
     ```groovy
-       implementation 'com.github.SabriGhazali:Shadout-Android:013dfbc366'
+       implementation 'com.github.SabriGhazali:Shadout-Android:1.0.0'
 
     
  
