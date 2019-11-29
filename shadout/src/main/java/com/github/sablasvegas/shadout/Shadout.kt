@@ -10,11 +10,11 @@ import android.widget.FrameLayout
 
 class Shadout : FrameLayout {
 
-    private var mShadowColor = 0
-    private var mShadowRadius = 0f
-    private var mCornerRadius = 0f
-    private var mDx = 0f
-    private var mDy = 0f
+    var mShadowColor = 0
+    var mShadowRadius = 0f
+    var mCornerRadius = 0f
+    var mDx = 0f
+    var mDy = 0f
     private val mInvalidateShadowOnSizeChanged = true
     private var mForceInvalidateShadow = false
 
@@ -78,9 +78,9 @@ class Shadout : FrameLayout {
         w: Int,
         h: Int
     ) { if (isInEditMode) {
-            setBackgroundColor(mShadowColor)
-            return
-        }
+        setBackgroundColor(mShadowColor)
+        return
+    }
         val bitmap = createShadowBitmap(
             w,
             h,
@@ -118,7 +118,7 @@ class Shadout : FrameLayout {
             mDy = attr.getDimension(R.styleable.Shadout_Dy, 0f)
             mShadowColor = attr.getColor(
                 R.styleable.Shadout_shadowColor,
-                resources.getColor(R.color.color_blue_shadow)
+                resources.getColor(R.color.color_grey)
             )
         } finally {
             attr.recycle()
