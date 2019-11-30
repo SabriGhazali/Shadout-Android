@@ -18,15 +18,20 @@
 	   }
 	}
 	```
-
-       ```groovy
-        implementation 'com.github.SabriGhazali:Shadout-Android:1.0.2'
-       ```
-
+	
+	
+	
+	
+	```groovy
+	implementation 'com.github.SabriGhazali:Shadout-Android:1.0.2'
+	```
+	
+	
+	
 2. XML
 
-       ```groovy
-       <com.github.sablasvegas.shadout.Shadout
+	```groovy
+	<com.github.sablasvegas.shadout.Shadout
         android:id="@+id/shadout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +46,5 @@
         app:cornerRadius="100dp">
         //Put your elements here ! 
        </com.github.sablasvegas.shadout.Shadout>
-       ```
-
-    
- 
+	```
+	
