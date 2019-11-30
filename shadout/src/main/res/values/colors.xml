@@ -2,8 +2,6 @@
 <resources>
     <color name="color_blue">#0075EB</color>
     <color name="color_blue_shadow">#660075EB</color>
-    <color name="color_pink_shadow">#66E9097E</color>
-    <color name="color_pink">#E9097E</color>
     <color name="color_grey">#66828282</color>
     <color name="color_Black">#66000000</color>
 </resources>

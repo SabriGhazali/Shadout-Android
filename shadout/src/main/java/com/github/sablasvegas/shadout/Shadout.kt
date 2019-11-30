@@ -6,30 +6,63 @@ import android.graphics.*
 import android.graphics.drawable.BitmapDrawable
 import android.os.Build
 import android.util.AttributeSet
+import android.view.View
+import android.view.ViewGroup
 import android.widget.FrameLayout
+import androidx.core.graphics.toColor
 
 class Shadout : FrameLayout {
 
+    private var h: Int = 1
+    private var w: Int = 1
+
     var mShadowColor = 0
+        set(value) {
+            field = value
+            setBackgroundCompat(w, h)
+        }
+
     var mShadowRadius = 0f
+        set(value) {
+            field = value
+            setBackgroundCompat(w, h)
+        }
     var mCornerRadius = 0f
+        set(value) {
+            field = value
+            setBackgroundCompat(w, h)
+        }
+
     var mDx = 0f
+        set(value) {
+            field = value
+            setBackgroundCompat(w, h)
+        }
     var mDy = 0f
+        set(value) {
+            field = value
+            setBackgroundCompat(w, h)
+        }
+
     private val mInvalidateShadowOnSizeChanged = true
     private var mForceInvalidateShadow = false
 
 
     constructor(context: Context) : super(context) {
-        initView(context,null)
+        initView(context, null)
     }
+
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {
-        initView(context,attrs)
-    }
-    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
-    {
         initView(context, attrs)
     }
 
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(
+        context,
+        attrs,
+        defStyleAttr
+    ) {
+        initView(context, attrs)
+    }
 
 
     override fun getSuggestedMinimumWidth(): Int {
@@ -48,6 +81,7 @@ class Shadout : FrameLayout {
         }
     }
 
+
     override fun onLayout(
         changed: Boolean,
         left: Int,
@@ -60,6 +94,8 @@ class Shadout : FrameLayout {
             mForceInvalidateShadow = false
             setBackgroundCompat(right - left, bottom - top)
         }
+        w = right - left
+        h = bottom - top
     }
 
     private fun initView(
@@ -77,10 +113,11 @@ class Shadout : FrameLayout {
     private fun setBackgroundCompat(
         w: Int,
         h: Int
-    ) { if (isInEditMode) {
-        setBackgroundColor(mShadowColor)
-        return
-    }
+    ) {
+//        if (isInEditMode) {
+//            setBackgroundColor(mShadowColor)
+//            return
+//        }
         val bitmap = createShadowBitmap(
             w,
             h,
@@ -118,7 +155,7 @@ class Shadout : FrameLayout {
             mDy = attr.getDimension(R.styleable.Shadout_Dy, 0f)
             mShadowColor = attr.getColor(
                 R.styleable.Shadout_shadowColor,
-                resources.getColor(R.color.color_grey)
+                resources.getColor(R.color.color_Black)
             )
         } finally {
             attr.recycle()
@@ -169,7 +206,6 @@ class Shadout : FrameLayout {
         canvas.drawRoundRect(shadowRect, cornerRadius, cornerRadius, shadowPaint)
         return output
     }
-
 
 
 }

@@ -1,0 +1,4 @@
+#Tue Nov 26 01:13:13 CET 2019
+base.0=C\:\\Users\\Workspace\\AndroidStudioProjects\\Shadout\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
